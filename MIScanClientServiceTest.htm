@@ -1,0 +1,550 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIScan Web Test</title>
+    <style>
+        body {
+    font-family:Verdana;
+    
+    box-sizing: border-box;
+ 
+}
+
+.panel {
+    background-color: #FFFFFF;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #357EBD;
+    font-size: 24px;
+    font-weight: bold;
+  
+    
+}
+
+.wrapper_item {
+    display: flex;
+    justify-content:flex-start;
+    padding: 16px;
+    margin-top: 8px;
+   
+}
+
+.wrapper_item_box {
+   padding: 16px;
+    margin: 8px 0; 
+    width: 100%;
+}
+
+.img_box {
+
+   
+}
+
+.wrapper_item_box_info {
+    display: block;
+    margin: 5px;
+}
+
+.details {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: auto;
+}
+
+.details span {
+   
+    margin-right: 10px;
+}
+
+.flex_box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.flex_box .input-group {
+    margin-right: 24px;
+    margin-bottom:18px;
+    width: 100%;
+}
+
+.flex_box .input-group:last-child {
+    margin-right: 0;
+}
+
+.status-container,
+.quality-container,
+.base64-container,
+.match-container {
+    margin-bottom: 10px;
+}
+
+.form-control {
+    margin-top:8px;
+    width: 100%;
+    padding: 6px;
+    font-size: 12px;
+    color: #555;
+    background-color: #FFF;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+textarea.form-control {
+    height: 12px;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight:600;
+    font-size:14px;
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #357EBD;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #357EBD;
+}
+
+@media (max-width: 600px) {
+    .flex_box {
+        flex-direction: column;
+    }
+
+    .flex_box .input-group {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+        .device-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.device-info div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-bold {
+    font-weight:600;
+    font-size:14px;
+}
+
+
+
+.button-group {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-bottom: 0px;
+}
+.header {
+    text-align: center;
+    color: #ffff;
+    background-color: #428BCA;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px;
+    grid-row: 1 / 2;
+}
+
+.btn-50 {
+    width: 50px;
+   
+}
+
+.btn-100 {
+    width: 100px;
+}
+
+.btn-150 {
+    width: 150px;
+    height: 30px;
+    
+}
+
+.btn-200 {
+    width: 205px;
+    
+}
+
+.btn-primary {
+    color: #FFF;
+    background-color: #428BCA;
+    border-color: #357EBD;
+    border-radius: 5px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.btn-primary:hover {
+    background-color: #357EBD;
+}
+
+.status-container, .quality-container, .base64-container, .match-container {
+    margin-bottom: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* gap: 12px; */
+    grid-row: 2 / 3;
+}
+/* .box {
+            padding: 20px;
+            border: 1px solid #357EBD;
+            border-radius: 5px;
+            height: 200px;
+           
+        } */
+
+        .below-grid {
+            /* padding: 20px; */
+            background-color: #ddd;
+        }
+        .wrapper_item{
+            display:flex;
+            align-items:normal;
+            padding: 0px;
+            margin-top: 8px;
+           border: 1px solid #bdbdbd;
+            justify-content: space-around;
+        }
+.details {
+    flex: 1 1 50%; 
+    margin-bottom:4px;
+    display: flex;
+}
+
+.details span {
+    display: inline-block;
+    /* margin-right: 200PX; */
+}
+
+        .wrapper_item_box.img_box{
+            margin-left: auto;
+            justify-content: space-between;
+        }
+        
+        .wrapper_item.item_child_1{
+            margin-top: 16px;
+        }
+        .wrapper_item_box.wrapper_item_box_info{
+            display:block;
+            align-items:center;
+            margin:5px;
+        }
+        .mb-8px{
+            margin-bottom:8px;
+        }
+        .flex_box{
+            display:flex;
+            align-items: center;
+        }
+        .flex_box .input-group{
+            margin-right: 24px;
+            width: 100%;
+        }
+        .flex_box .input-group:last-child{
+            margin-right: 0;
+        }
+   
+    </style>
+     <script src="jquery-1.8.2.js"></script>
+     <script src="miscan.js"></script>
+     <script language="javascript" type="text/javascript">
+         UnInit();
+         var timeout = 50; // seconds (minimum=10(recommanded), maximum=60, unlimited=0 )
+         var nooffinger = '1';
+         $(document).ready(function () {
+             UnInit();
+             ClearData();
+         });
+ 
+         function ClearData() {
+             document.getElementById('tdSerial').innerHTML = "";
+             document.getElementById('tdMake').innerHTML = "";
+             document.getElementById('tdModel').innerHTML = "";
+             document.getElementById('tdWidth').innerHTML = "";
+             document.getElementById('tdHeight').innerHTML = "";
+             document.getElementById('tdSystemID').innerHTML = "";
+             document.getElementById('txtImageInfo').value = "";
+             document.getElementById('txtIsoTemplate').value = "";
+             document.getElementById('imgFinger').src = "";
+             document.getElementById('txtStatus').value = "";
+ 
+         }
+ 
+         function validate() {
+ 
+             timeout = $("#txtTimeout").val();
+ 
+             if (timeout == "") {
+                 alert("Timeout must not be null");
+                 return false;
+             }
+             if (timeout > 9 && timeout % 1 == 0) {
+             }
+             else {
+                 alert("Invalid timeout or timeout should be greater or equal to 10");
+                 return false;
+             }
+             return true;
+         }
+ 
+         function GetInfo() {
+ 
+             DisabledButton(true)
+             document.getElementById('tdSerial').innerHTML = "";
+             document.getElementById('tdMake').innerHTML = "";
+             document.getElementById('tdModel').innerHTML = "";
+             document.getElementById('tdWidth').innerHTML = "";
+             document.getElementById('tdHeight').innerHTML = "";
+             document.getElementById('tdSystemID').innerHTML = "";
+ 
+             document.getElementById('txtStatus').value = "";
+             document.getElementById('imgFinger').src = "data:image/bmp;base64,";
+             document.getElementById('txtImageInfo').value = "";
+             document.getElementById('txtIsoTemplate').value = "";
+             //document.getElementById('txtProbTemplate').value = "";
+             document.getElementById('ddlImageFormat').selectedIndex = "0";
+ 
+             var res;
+             res = GetMIScanInfo();
+ 
+             if (res.httpStaus) {
+ 
+                 document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
+ 
+                 if (res.data.ErrorCode == "0") {
+ 
+                     isInit = 1;
+                     document.getElementById('tdSerial').innerHTML = res.data.DeviceInfo1.SerialNo;
+                     document.getElementById('tdMake').innerHTML = res.data.DeviceInfo1.Make;
+                     document.getElementById('tdModel').innerHTML = res.data.DeviceInfo1.Model;
+                     document.getElementById('tdWidth').innerHTML = res.data.DeviceInfo1.Width;
+                     document.getElementById('tdHeight').innerHTML = res.data.DeviceInfo1.Height;
+                     document.getElementById('tdSystemID').innerHTML = res.data.DeviceInfo1.SystemID;
+                 }
+             }
+             else {
+                 alert(res.err);
+             }
+             DisabledButton(false);
+             return false;
+         }
+ 
+         var delayInMilliseconds = 300; //0.1 second
+         var isInit = 0;
+         function Capture() {
+             try {
+                 DisabledButton(true);
+                 document.getElementById('txtStatus').value = "";
+                 document.getElementById('imgFinger').src = "";
+                 document.getElementById('txtImageInfo').value = "";
+                 document.getElementById('txtIsoTemplate').value = "";
+                 //document.getElementById('txtProbTemplate').value = "";
+ 
+                 if (!validate()) {
+                 }
+                 else {
+                     if (isInit == 1) {
+                         document.getElementById('txtStatus').value = "Capture is in progress......";
+                     }
+                     setTimeout(function () {
+ 
+                         timeout = $("#txtTimeout").val();
+                         if (timeout == "") {
+                             alert("Timeout must not be null");
+                             DisabledButton(false);
+                             return false;
+                         }
+                         if (timeout >= 0 && timeout % 1 == 0) {
+ 
+                         }
+                         else {
+                             alert("Invalid timeout or timeout should be greater or equal to 10");
+                             DisabledButton(false);
+                             return false;
+                         }
+ 
+                         var res = CaptureIris(timeout);
+                         if (res.httpStaus) {
+                             //document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
+ 
+                             if (res.data.ErrorCode == "0") {
+                                 document.getElementById('imgFinger').src = "data:image/bmp;base64," + res.data.BitmapData;
+                                 var imageinfo = "Quality: " + res.data.Quality;//+ " Nfiq: " + res.data.Nfiq
+                                 document.getElementById('txtImageInfo').value = imageinfo;
+                                 document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + "Capture Success";
+                             }
+                             else {
+                                 document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
+                                 alert(res.data.ErrorDescription);
+                             }
+                         }
+                         else {
+                             document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
+                             alert(res.err);
+                         }
+ 
+                         DisabledButton(false);
+ 
+                     }, delayInMilliseconds);
+ 
+                 }
+             }
+             catch (e) {
+                 document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + "";
+                 alert(e);
+             }
+             return false;
+         }
+ 
+         function GetImageByFormat() {
+             try {
+                 var imgFormat = $("#ddlImageFormat").val();
+                 if (imgFormat == "0") {
+                     alert("Please Select Image Type");
+                     return false;
+                 }
+                 else {
+ 
+                     imgFormat = imgFormat - 1;
+                     DisabledButton(true);
+                     var res = GetImage(imgFormat);
+                     if (res.httpStaus) {
+                         document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
+ 
+                         if (res.data.ErrorCode == "0") {
+                             if (res.data != null) {
+                                 document.getElementById('txtIsoTemplate').value = res.data.ImgData;
+                             }
+                         }
+                     }
+                     else {
+                         alert(res.err);
+                     }
+                 }
+             }
+             catch (e) {
+                 alert(e);
+             }
+             DisabledButton(false);
+             return false;
+ 
+         }
+ 
+         function DisabledButton(isDisabled) {
+             $('#btnCapture').prop('disabled', isDisabled);
+             $('#btnInfo').prop('disabled', isDisabled);
+         }
+ 
+     </script>
+</head>
+<body>
+    <div class="panel">
+   
+    <div class="header">MIScan
+        
+    </div>
+    <div class="body_wrapper">
+        <div class="wrapper_item">
+            <div class="wrapper_item_box" style="width:2700px">
+                <div class="flex_box">
+                    <div class="input-group">
+                        <label>Timeout</label>
+                        <input type="text" class="form-control" id="txtTimeout" value="10" />
+                    </div>
+                    <div class="input-group">
+                        <label>Select Image Type</label>
+                        <select id="ddlImageFormat" class="form-control">
+                            <option value="0">Select</option>
+                            <option value="1">BMP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="button-group">
+                    <input type="submit" id="btnInfo" value="Get Info" class="btn btn-primary btn-200" onclick="return GetInfo()" />
+                    <input type="submit" id="btnCapture" value="Capture" class="btn btn-primary btn-200" onclick="return Capture()" />
+                    <input type="submit" id="btnGetImage" value="Get Image" class="btn btn-primary btn-150" style="width: 200px;" onclick="return GetImageByFormat()" />
+                </div>
+            </div>
+            <div class="wrapper_item_box img_box">
+               
+                    <img id="imgFinger"style=" border: 1px solid #AEAEAE;" width="250px" height="190px" alt="Iris Image" />
+             
+            </div>
+              <div class="wrapper_item_box">
+                  <div class="details">
+                        <span class="text-bold">Serial No:</span>
+                        <span id="tdSerial"></span>
+                    </div>
+                    <div class="details">
+                        <span class="text-bold">Make:</span>
+                        <span id="tdMake"></span>
+                    </div>
+                    <div class="details">
+                        <span class="text-bold">Model:</span>
+                        <span id="tdModel"></span>
+                    </div>
+                    <div class="details">
+                        <span class="text-bold">Width:</span>
+                        <span id="tdWidth"></span>
+                    </div>
+                    <div class="details">
+                        <span class="text-bold">Height:</span>
+                        <span id="tdHeight"></span>
+                    </div>
+                    <div class="details">
+                        <span class="text-bold">System ID:</span>
+                        <span id="tdSystemID"></span>
+                    </div>
+                   
+                </div>
+        </div>
+        <div class="wrapper_item">
+            
+            <div class="wrapper_item_box">
+                <div class="status-container">
+                    <label class="text-bold">Status</label>
+                    <input class="form-control"style="resize: none;" id="txtStatus" rows="2"></input>
+                </div>
+                <div class="quality-container">
+                    <label class="text-bold">Quality</label>
+                    <input class="form-control"style="resize: none;" id="txtImageInfo" rows="5"></input>
+                </div>
+                <div class="base64-container">
+                    <label class="text-bold">Base64Encoded Image Data</label>
+                    <input class="form-control" style="resize: none;"id="txtIsoTemplate" rows="5"></input>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+  
+
+</body>
+</html>
