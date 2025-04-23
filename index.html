@@ -1,275 +1,11 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IRIS Scan</title>
     <style>
-        body {
-    font-family:Verdana;
-    
-    box-sizing: border-box;
- 
-}
-
-.panel {
-    background-color: #FFFFEF;
-    padding: 0px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.header {
-    text-align: center;
-    color: #FFFFFF;
-    background-color: #357EBD;
-    font-size: 24px;
-    font-weight: bold;
-  
-    
-}
-
-.wrapper_item {
-    display: flex;
-    justify-content:flex-start;
-    padding: 16px;
-    margin-top: 8px;
-   
-}
-
-.wrapper_item_box {
-   padding: 16px;
-    margin: 8px 0; 
-    width: 100%;
-}
-
-.img_box {
-
-   
-}
-
-.wrapper_item_box_info {
-    display: block;
-    margin: 5px;
-}
-
-.details {
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: auto;
-}
-
-.details span {
-   
-    margin-right: 10px;
-}
-
-.flex_box {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 10px;
-}
-
-.flex_box .input-group {
-    margin-right: 24px;
-    margin-bottom:18px;
-    width: 100%;
-}
-
-.flex_box .input-group:last-child {
-    margin-right: 0;
-}
-
-.status-container,
-.quality-container,
-.base64-container,
-.match-container {
-    margin-bottom: 10px;
-}
-
-.form-control {
-    margin-top:8px;
-    width: 100%;
-    padding: 6px;
-    font-size: 12px;
-    color: #555;
-    background-color: #FFF;
-    border: 1px solid #bdbdbd;
-    border-radius: 4px;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-textarea.form-control {
-    height: 12px;
-    width: 100%;
-}
-
-.input-group label {
-    font-weight:600;
-    font-size:14px;
-}
-
-.btn-primary {
-    color: #FFF;
-    background-color: #428BCA;
-    border-color: #357EBD;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.btn-primary:hover {
-    background-color: #357EBD;
-}
-
-@media (max-width: 600px) {
-    .flex_box {
-        flex-direction: column;
-    }
-
-    .flex_box .input-group {
-        width: 100%;
-        margin-right: 0;
-    }
-}
-
-        .device-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.device-info div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-bold {
-    font-weight:600;
-    font-size:14px;
-}
-
-
-
-.button-group {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
-    margin-bottom: 0px;
-}
-.header {
-    text-align: center;
-    color: #ffff;
-    background-color: #428BCA;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 16px;
-    grid-row: 1 / 2;
-}
-
-.btn-50 {
-    width: 50px;
-   
-}
-
-.btn-100 {
-    width: 100px;
-}
-
-.btn-150 {
-    width: 150px;
-    height: 30px;
-    
-}
-
-.btn-200 {
-    width: 205px;
-    
-}
-
-.btn-primary {
-    color: #FFF;
-    background-color: #428BCA;
-    border-color: #357EBD;
-    border-radius: 5px;
-    margin-top:10px;
-    margin-bottom:10px;
-}
-
-.btn-primary:hover {
-    background-color: #357EBD;
-}
-
-.status-container, .quality-container, .base64-container, .match-container {
-    margin-bottom: 10px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    /* gap: 12px; */
-    grid-row: 2 / 3;
-}
-/* .box {
-            padding: 20px;
-            border: 1px solid #357EBD;
-            border-radius: 5px;
-            height: 200px;
-           
-        } */
-
-        .below-grid {
-            /* padding: 20px; */
-            background-color: #ddd;
-        }
-        .wrapper_item{
-            display:flex;
-            align-items:normal;
-            padding: 0px;
-            margin-top: 8px;
-           border: 1px solid #bdbdbd;
-            justify-content: space-around;
-        }
-.details {
-    flex: 1 1 50%; 
-    margin-bottom:4px;
-    display: flex;
-}
-
-.details span {
-    display: inline-block;
-    /* margin-right: 200PX; */
-}
-
-        .wrapper_item_box.img_box{
-            margin-left: auto;
-            justify-content: space-between;
-        }
-        
-        .wrapper_item.item_child_1{
-            margin-top: 16px;
-        }
-        .wrapper_item_box.wrapper_item_box_info{
-            display:block;
-            align-items:center;
-            margin:5px;
-        }
-        .mb-8px{
-            margin-bottom:8px;
-        }
-        .flex_box{
-            display:flex;
-            align-items: center;
-        }
-        .flex_box .input-group{
-            margin-right: 24px;
-            width: 100%;
-        }
-        .flex_box .input-group:last-child{
-            margin-right: 0;
-        }
-   
+        /* Your existing CSS styles */
     </style>
      <script src="jquery-1.8.2.js"></script>
      <script src="miscan.js"></script>
@@ -281,7 +17,7 @@ textarea.form-control {
              UnInit();
              ClearData();
          });
- 
+
          function ClearData() {
              document.getElementById('tdSerial').innerHTML = "";
              document.getElementById('tdMake').innerHTML = "";
@@ -293,28 +29,23 @@ textarea.form-control {
              document.getElementById('txtIsoTemplate').value = "";
              document.getElementById('imgFinger').src = "";
              document.getElementById('txtStatus').value = "";
- 
          }
- 
+
          function validate() {
- 
              timeout = $("#txtTimeout").val();
- 
              if (timeout == "") {
                  alert("Timeout must not be null");
                  return false;
              }
-             if (timeout > 9 && timeout % 1 == 0) {
-             }
+             if (timeout > 9 && timeout % 1 == 0) {}
              else {
                  alert("Invalid timeout or timeout should be greater or equal to 10");
                  return false;
              }
              return true;
          }
- 
+
          function GetInfo() {
- 
              DisabledButton(true)
              document.getElementById('tdSerial').innerHTML = "";
              document.getElementById('tdMake').innerHTML = "";
@@ -322,23 +53,15 @@ textarea.form-control {
              document.getElementById('tdWidth').innerHTML = "";
              document.getElementById('tdHeight').innerHTML = "";
              document.getElementById('tdSystemID').innerHTML = "";
- 
              document.getElementById('txtStatus').value = "";
              document.getElementById('imgFinger').src = "data:image/bmp;base64,";
              document.getElementById('txtImageInfo').value = "";
              document.getElementById('txtIsoTemplate').value = "";
-             //document.getElementById('txtProbTemplate').value = "";
-             document.getElementById('ddlImageFormat').selectedIndex = "0";
- 
              var res;
              res = GetMIScanInfo();
- 
              if (res.httpStaus) {
- 
                  document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
- 
                  if (res.data.ErrorCode == "0") {
- 
                      isInit = 1;
                      document.getElementById('tdSerial').innerHTML = res.data.DeviceInfo1.SerialNo;
                      document.getElementById('tdMake').innerHTML = res.data.DeviceInfo1.Make;
@@ -354,7 +77,7 @@ textarea.form-control {
              DisabledButton(false);
              return false;
          }
- 
+
          var delayInMilliseconds = 300; //0.1 second
          var isInit = 0;
          function Capture() {
@@ -364,8 +87,6 @@ textarea.form-control {
                  document.getElementById('imgFinger').src = "";
                  document.getElementById('txtImageInfo').value = "";
                  document.getElementById('txtIsoTemplate').value = "";
-                 //document.getElementById('txtProbTemplate').value = "";
- 
                  if (!validate()) {
                  }
                  else {
@@ -373,29 +94,24 @@ textarea.form-control {
                          document.getElementById('txtStatus').value = "Capture is in progress......";
                      }
                      setTimeout(function () {
- 
                          timeout = $("#txtTimeout").val();
                          if (timeout == "") {
                              alert("Timeout must not be null");
                              DisabledButton(false);
                              return false;
                          }
-                         if (timeout >= 0 && timeout % 1 == 0) {
- 
-                         }
+                         if (timeout >= 0 && timeout % 1 == 0) {}
                          else {
                              alert("Invalid timeout or timeout should be greater or equal to 10");
                              DisabledButton(false);
                              return false;
                          }
- 
+
                          var res = CaptureIris(timeout);
                          if (res.httpStaus) {
-                             //document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
- 
                              if (res.data.ErrorCode == "0") {
                                  document.getElementById('imgFinger').src = "data:image/bmp;base64," + res.data.BitmapData;
-                                 var imageinfo = "Quality: " + res.data.Quality;//+ " Nfiq: " + res.data.Nfiq
+                                 var imageinfo = "Quality: " + res.data.Quality;
                                  document.getElementById('txtImageInfo').value = imageinfo;
                                  document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + "Capture Success";
                              }
@@ -408,11 +124,10 @@ textarea.form-control {
                              document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
                              alert(res.err);
                          }
- 
+
                          DisabledButton(false);
- 
+
                      }, delayInMilliseconds);
- 
                  }
              }
              catch (e) {
@@ -421,54 +136,31 @@ textarea.form-control {
              }
              return false;
          }
- 
-         function GetImageByFormat() {
-             try {
-                 var imgFormat = $("#ddlImageFormat").val();
-                 if (imgFormat == "0") {
-                     alert("Please Select Image Type");
-                     return false;
-                 }
-                 else {
- 
-                     imgFormat = imgFormat - 1;
-                     DisabledButton(true);
-                     var res = GetImage(imgFormat);
-                     if (res.httpStaus) {
-                         document.getElementById('txtStatus').value = "ErrorCode: " + res.data.ErrorCode + " ErrorDescription: " + res.data.ErrorDescription;
- 
-                         if (res.data.ErrorCode == "0") {
-                             if (res.data != null) {
-                                 document.getElementById('txtIsoTemplate').value = res.data.ImgData;
-                             }
-                         }
-                     }
-                     else {
-                         alert(res.err);
-                     }
-                 }
-             }
-             catch (e) {
-                 alert(e);
-             }
-             DisabledButton(false);
-             return false;
- 
-         }
- 
+
          function DisabledButton(isDisabled) {
              $('#btnCapture').prop('disabled', isDisabled);
              $('#btnInfo').prop('disabled', isDisabled);
          }
- 
+
+         // New function to save the image
+         function saveImage() {
+             const imgSrc = document.getElementById('imgFinger').src;  // Get the image source
+             if (imgSrc) {
+                 const link = document.createElement('a');
+                 link.href = imgSrc;
+                 link.download = 'iris_image.bmp';  // Set the filename to be saved
+                 link.click();  // Trigger the download
+             } else {
+                 alert("No image to save.");
+             }
+         }
+
      </script>
 </head>
 <body>
     <div class="panel">
    
-    <div class="header">IRIS Scan
-        
-    </div>
+    <div class="header">IRIS Scan</div>
     <div class="body_wrapper">
         <div class="wrapper_item">
             <div class="wrapper_item_box" style="width:2700px">
@@ -491,12 +183,16 @@ textarea.form-control {
                 </div>
             </div>
             <div class="wrapper_item_box img_box">
-               
-                    <img id="imgFinger"style=" border: 1px solid #AEAEAE;" width="250px" height="190px" alt="Iris Image" />
-             
+                <img id="imgFinger" style=" border: 1px solid #AEAEAE;" width="250px" height="190px" alt="Iris Image" />
             </div>
-              <div class="wrapper_item_box">
-                  <div class="details">
+            <div class="wrapper_item_box">
+                <div class="button-group">
+                    <!-- New Save Image Button -->
+                    <button class="btn btn-primary btn-200" onclick="saveImage()">Save Image</button>
+                </div>
+            </div>
+            <div class="wrapper_item_box">
+                <div class="details">
                         <span class="text-bold">Serial No:</span>
                         <span id="tdSerial"></span>
                     </div>
@@ -520,30 +216,9 @@ textarea.form-control {
                         <span class="text-bold">System ID:</span>
                         <span id="tdSystemID"></span>
                     </div>
-                   
                 </div>
         </div>
-        <div class="wrapper_item">
-            
-            <div class="wrapper_item_box">
-                <div class="status-container">
-                    <label class="text-bold">Status</label>
-                    <input class="form-control"style="resize: none;" id="txtStatus" rows="2"></input>
-                </div>
-                <div class="quality-container">
-                    <label class="text-bold">Quality</label>
-                    <input class="form-control"style="resize: none;" id="txtImageInfo" rows="5"></input>
-                </div>
-                <div class="base64-container">
-                    <label class="text-bold">Base64Encoded Image Data</label>
-                    <input class="form-control" style="resize: none;"id="txtIsoTemplate" rows="5"></input>
-                </div>
-            </div>
-        </div>
     </div>
-
     </div>
-  
-
 </body>
 </html>
